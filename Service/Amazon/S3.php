@@ -17,7 +17,7 @@
  * @subpackage Amazon_S3
  * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id$
+ * @version    $Id: S3.php 24083 2011-05-30 10:52:55Z ezimuel $
  */
 
 /**

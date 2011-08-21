@@ -38,7 +38,7 @@ require_once 'Zend/Validate/Abstract.php';
  * @subpackage Element
  * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id$
+ * @version    $Id: Element.php 24198 2011-07-05 16:04:15Z matthew $
  */
 class Zend_Form_Element implements Zend_Validate_Interface
 {

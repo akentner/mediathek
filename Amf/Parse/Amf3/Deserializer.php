@@ -17,7 +17,7 @@
  * @subpackage Parse_Amf3
  * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id$
+ * @version    $Id: Deserializer.php 24138 2011-06-14 01:38:34Z adamlundrigan $
  */
 
 /** Zend_Amf_Parse_Deserializer */

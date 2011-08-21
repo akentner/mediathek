@@ -16,7 +16,7 @@
  * @package    Zend_Mime
  * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id$
+ * @version    $Id: Decode.php 23984 2011-05-03 19:35:48Z ralph $
  */
 
 /**

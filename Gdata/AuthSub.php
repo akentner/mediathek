@@ -18,7 +18,7 @@
  * @subpackage Gdata
  * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id$
+ * @version    $Id: AuthSub.php 24319 2011-07-30 13:43:41Z mikaelkael $
  */
 
 /**

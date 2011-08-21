@@ -30,7 +30,7 @@ require_once 'Zend/Form/Element/Xhtml.php';
  * @subpackage Element
  * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id$
+ * @version    $Id: Submit.php 24280 2011-07-28 18:39:33Z matthew $
  */
 class Zend_Form_Element_Submit extends Zend_Form_Element_Xhtml
 {
