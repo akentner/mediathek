@@ -6,3 +6,5 @@
 /src/var
 /src/library/Zend
 /src/library/Shanty
+/externals/coen-hyde/Shanty-Mongo/*
+/externals/dmelo/Zend-1.11/*
