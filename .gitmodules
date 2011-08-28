@@ -1,9 +1,6 @@
-[submodule "externals/dmelo/Zend-1.11"]
-	path = externals/dmelo/Zend-1.11
-	url = git://github.com/dmelo/Zend-1.11.git
 [submodule "externals/coen-hyde/Shanty-Mongo"]
 	path = externals/coen-hyde/Shanty-Mongo
 	url = git://github.com/coen-hyde/Shanty-Mongo.git
-[submodule "externals/dmelo/Zend"]
-	path = externals/dmelo/Zend
+[submodule "externals/dmelo/Zend-1.11"]
+	path = externals/dmelo/Zend-1.11
 	url = git://github.com/dmelo/Zend-1.11.git
