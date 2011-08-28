@@ -4,3 +4,5 @@
 .buildpath
 /nbproject
 /src/var
+/src/library/Zend
+/src/library/Shanty
