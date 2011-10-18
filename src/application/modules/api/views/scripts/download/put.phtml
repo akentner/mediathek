@@ -1,0 +1,20 @@
+<?php
+if ($this->success):
+    $this->response->setRedirect(
+        $this->url(
+            array(
+                'module' => 'api',
+                'controller' => 'download',
+                'id' => $this->data->id,
+            ), 
+            'rest', 
+            true
+        )
+    );
+else: ?>
+<h2>Create new backlog</h2>
+<?php
+    $this->form->setAction($this->url())
+               ->setMethod('post');
+    echo $this->form;
+endif ?>

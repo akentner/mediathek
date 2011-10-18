@@ -1,0 +1,25 @@
+<?php 
+/**
+ * @property $data Shanty_Mongo_Document
+ */
+
+// download/post.json.phtml 
+
+
+?>
+<?php
+
+if ($this->success) {
+    $url = $this->url(array(
+        'controller' => 'download',
+        'id'         => $this->data->getId(),
+    ), 'rest', true);
+    $this->response->setHeader('Location', $url)
+                   ->setHttpResponseCode(201);
+    echo $this->json($this->data->__toArray());
+//    print_r($this->data->__toArray());
+    return;
+}
+echo $this->json($this->error);
+//print_r($this->error);
+

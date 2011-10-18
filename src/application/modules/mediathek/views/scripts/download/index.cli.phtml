@@ -1,0 +1,8 @@
+<?php
+defined('NL') ?: define('NL', "\n");
+defined('TAB') ?: define('TAB', "\t");
+
+foreach ($this->data as $item) {
+    echo $item['status'] . TAB . $item['url'] .NL; 
+    
+}

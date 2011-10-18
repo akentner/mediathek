@@ -1,0 +1,48 @@
+<?php if ($this->success):?>
+
+<h1><?php echo $this->count ?></h1>
+<?php $columns = array('id', 'url', 'status', 'created', 'modified'); ?>
+<table>
+    <tr>
+        <?php foreach ($columns as $key): ?>
+            <th><?php echo $key ?></th>
+        <?php endforeach; ?>    
+    </tr>
+    <?php foreach ($this->data as $item): ?>
+        <tr>
+            <?php foreach ($columns as $key): ?>
+                <td class="<?php echo $key ?>">
+                    <?php
+                    switch ($key) {
+                        case 'id':
+                            echo $item->getId();
+                            break;
+                        case 'status':
+                            echo $item->getStatus(true);
+                            break;
+                        case 'modified':
+                        case 'created':
+                            $date = new Zend_Date($item->$key);
+                            echo $date->toString(Zend_Date::DATETIME_MEDIUM);
+                            break;
+                        default:
+                            echo $item->$key;
+                    }
+                    ?>
+                </td>
+            <?php endforeach; ?>    
+        </tr>
+    <?php endforeach; ?>
+</table>
+<?php else:?>
+
+<pre>
+<?php
+    if ($this->error instanceof \Exception) {
+        echo $this->error->getMessage();
+    } else {
+        echo $this->error;
+    }
+?>
+</pre>
+<?php endif; ?>

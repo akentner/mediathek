@@ -1,0 +1,13 @@
+<?php
+defined('NL') ? : define('NL', "\n");
+foreach ($this->getVars() as $key => $value) {
+    echo '=== ' . $key . ' ===' . NL;
+    switch ($key) {
+        case 'body':
+            echo 'value: ' . $value . NL;
+            break;
+        default;
+            echo 'value: ' . print_r($value, true) . NL;
+    }
+    echo NL;
+}

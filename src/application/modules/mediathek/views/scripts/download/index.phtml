@@ -1,0 +1,29 @@
+<?php $columns = array('url', 'status', 'datetime'); ?>
+<table>
+    <tr>
+        <?php foreach ($columns as $key): ?>
+            <th><?php echo $key ?></th>
+        <?php endforeach; ?>    
+    </tr>
+    <?php foreach ($this->data as $item): ?>
+        <tr>
+            <?php foreach ($columns as $key): ?>
+                <td class="<?php echo $key ?>">
+                    <?php
+                    switch ($key) {
+                        case 'url':
+                            echo '<a href="./get/id/' . $item['_id'] .'">' . $item['url'] . '</a>';
+                            break;
+                        case 'datetime':
+//                            $date = new Zend_Date($item['datetime']['created']);
+//                            echo $date->toString(Zend_Date::DATETIME_SHORT);
+                            break;
+                        default:
+                            echo $item[$key];
+                    }
+                    ?>
+                </td>
+            <?php endforeach; ?>    
+        </tr>
+    <?php endforeach; ?>
+</table>

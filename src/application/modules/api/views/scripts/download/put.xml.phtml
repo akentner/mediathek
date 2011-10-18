@@ -1,0 +1,15 @@
+<?php 
+
+foreach($this->getVars() as $key => $value) {
+    
+            echo '<h3> === ' . $key . ' === </h3>';
+    switch ($key) {
+        case 'body':
+            echo $value;
+            break;
+        default;
+            echo '<pre>' . print_r($value, true) . '</pre>';
+    }
+    
+    
+}    

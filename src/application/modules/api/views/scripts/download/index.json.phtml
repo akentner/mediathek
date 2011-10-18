@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @property $data Shanty_Mongo_Document
+ */
+// download/post.json.phtml 
+?>
+<?php
+
+if ($this->success) {
+    $url = $this->url(array(
+        'controller' => 'download',
+            ), 'rest', true);
+
+    $this->response->setHeader('Location', $url)
+            ->setHttpResponseCode(201);
+    $arr = array();
+    
+    if (is_array($this->data) || ($this->data instanceof Shanty_Mongo_Iterator_Cursor)) {
+        foreach ($this->data as $item) {
+            $arr[] = $item->__toArray();
+        }
+        echo $this->json($arr);
+    } elseif (is_scalar($this->data)) {
+        echo $this->json($this->data);
+    }
+    return;
+}
+echo $this->json($this->error);
+
